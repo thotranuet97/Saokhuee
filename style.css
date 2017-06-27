@@ -1,0 +1,116 @@
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+}
+
+body, div {
+    display: block;
+}
+
+.title h2 {
+    text-align: center;
+    color: inherit;
+}
+
+.main {
+    padding: 20px 40px;
+    margin-bottom: 20px;
+
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.email_address, .password, .checkbox, .submit {
+    margin-bottom: 15px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 7px 0 7px 10px;
+    margin-top: 5px;
+
+    display: inline-block;
+
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    color: lightgray;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 7px 0 7px 10px;
+    margin-top: 5px;
+
+    display: inline-block;
+
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    color: lightgray;
+}
+
+input[type=checkbox] {
+    float: left;
+}
+
+#forget {
+    float: right;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 7px 0;
+    margin-top: 5px;
+
+    display: inline-block;
+
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    text-align: center;
+    font-size: 14px;
+    color: inherit;
+}
+
+hr {
+    height: 0;
+    margin: 20px 0;
+
+    display: block;
+
+    border: 0;
+    border-top: 1px solid gainsboro;
+    box-sizing: border-box;
+}
+
+.or {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+a:link {
+    color: skyblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: blue;
+}
+
+
