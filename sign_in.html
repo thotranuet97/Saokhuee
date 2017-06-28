@@ -6,11 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="sign_in.css" />
 	<script src="sign_in.js"></script>
-
+	<link rel="icon" type="image/png" href="..\sign_in\logo\favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<div class="container">
+		<div class="header">
 		<img class="logo" src="..\sign_in\logo\logo_sach_mem.png">
 		<!--logo sach mem-->
 
@@ -20,21 +22,21 @@
 				<span> Bạn chưa có tài khoản?</span>
 				<a href="#">Đăng ký </a> hoặc
 
-				<div class="btn"> <!--drop button-->
-					<button class="btn success" onclick="dropFunction()">Dùng thử</button>
-                    <div id="IDdropdown" class="dropdown-content">
-						<a href="#">Giáo viên</a><br>
-					    <a href="#">Học sinh</a>
+				<div class="btn">
+					<!--drop button-->
+					<button class="btn success" onclick="dropFunction()">Dùng thử<div id="triangle-down">&#x25BC</div></button>
+					<div id="IDdropdown" class="dropdown-content">
+						<div id="gv"><a href="#">Giáo viên</a><br></div>
+						<div id="hs"><a href="#">Học sinh</a></div>
 					</div>
 				</div>
-			
+
 				<!--drop button-->
 				<script>
 					function dropFunction() {
 						document.getElementById("IDdropdown").classList.toggle("show");
 
 					}
-
 				</script>
 				<div>
 					<a href="#"> Hướng dẫn nhập mã sử dụng sách </a>
@@ -42,7 +44,60 @@
 			</div>
 		</div>
 		<!-- panel-->
+		</div>
 
+		<div class="title">
+			<h2>Đăng nhập</h2>
+		</div>
+
+		<div class="panel">
+			<form>
+				<div class="email_address">
+					<label for="email">Địa chỉ email:</label>
+					<input type="text" name="address" placeholder="Địa chỉ email" />
+				</div>
+
+				<div class="password">
+					<label for="pass">Mật khẩu:</label>
+					<input type="password" name="password" placeholder="Mật khẩu" />
+				</div>
+
+				<div class="checkbox">
+					<input type="checkbox" name="remember" value="on">
+					<label for="remember_me">Nhớ tài khoản</label>
+					<a href="#" id="_link">Quên mật khẩu?</a>
+				</div>
+
+				<div class="submit">
+					<input type="submit" value="Đăng nhập">
+				</div>
+
+				<hr>
+
+				<div class="replace">Hoặc đăng nhập bằng</div>
+
+				<div class="box-contain box-space box-bot">
+					<div class="_button">
+						<a href="#" class="btn1 block social btn-face">
+							<span class="fa fa-facebook"></span>Facebook
+						</a>
+					</div>
+
+					<div class="_button">
+						<a href="#" class="btn1 block social btn-google">
+							<span class="fa fa-google"></span>Google
+						</a>
+					</div>
+
+
+				</div>
+
+				<p>Khi bạn ấn vào nút đăng nhập bằng Facebook hoặc Google, bạn đã đồng ý với các
+					<a href="#" target="_blank" id="_link">Điều khoản dịch vụ</a> và đã đọc các
+					<a href="#" target="_blank" id="_link">Chính sách riêng tư</a> của chúng tôi.
+				</p>
+			</form>
+		</div>
 	</div>
 	<!--container-->
 
