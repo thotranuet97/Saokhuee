@@ -5,7 +5,6 @@
 	<title>Đăng nhập | Sách Mềm</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="sign_in.css" />
-	<script src="sign_in.js"></script>
 	<link rel="icon" type="image/png" href="..\sign_in\logo\favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,15 +15,15 @@
 		<img class="logo" src="..\sign_in\logo\logo_sach_mem.png">
 		<!--logo sach mem-->
 
-		<!-- panel-->
-		<div class="panel">
+		<!-- panel header-->
+		<div class="panel-header">
 			<div class="text-center">
 				<span> Bạn chưa có tài khoản?</span>
 				<a href="#">Đăng ký </a> hoặc
 
 				<div class="btn">
 					<!--drop button-->
-					<button class="btn success" onclick="dropFunction()">Dùng thử<div id="triangle-down">&#x25BC</div></button>
+					<button type="button" class="btn success" onclick="dropFunction()">Dùng thử<div id="triangle-down">&#x25BC</div></button>
 					<div id="IDdropdown" class="dropdown-content">
 						<div id="gv"><a href="#">Giáo viên</a><br></div>
 						<div id="hs"><a href="#">Học sinh</a></div>

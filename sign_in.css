@@ -56,6 +56,9 @@ a:hover{
 .show{
     display: block;
 }
+.success .show{
+    border: 1px solid black;
+}
 .dropdown-content .show{
     border: 1px solid black;
     border-radius: 5px; 
@@ -71,7 +74,7 @@ a:hover{
 #hs:hover {
     background:#C0DAE1;
 }
-.panel{
+.panel-header{
     border-style: solid;
     border-width: 1px;
     border-color: gainsboro;
@@ -106,23 +109,7 @@ a:hover{
      text-align: center;
 }
 
-footer{
-    position: absolute;
-    
-    left: 30px;
-    right: 30px;
-    font-family: sans-serif;
-    margin-top: 10px;
-    border-top: 1px solid gainsboro;
-    padding-top: 10px; 
-}
-.footerID:hover{
-    text-decoration: underline;
-    color: gray;
-}
-.footerID{
-    color: black;
-}
+
 
 
 
@@ -314,35 +301,17 @@ hr {
 
 .fa {
     position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 32px;
-
-    line-height: 34px;
-    font-size: 1.6em;
-    text-align: center; 
-
     border-right: 1px solid rgba(0,0,0,0.2);
+    transform: scale(1.6);
+    padding: 5px;
+    left:10px;
+    bottom: 3px;
 }
 
 .fa-facebook, .fa-google {
     color: white;
 }
-/*
-#_link:link {
-    color: #337ab7;
-    text-decoration: none;
-}
 
-#_link:visited {
-    color: blue;
-}
-
-#_link:hover {
-    color: blue;
-}
-*/
 .btn-face:hover {
     background-color: navy;
 }
@@ -350,3 +319,21 @@ hr {
     background-color: firebrick;
 }
 
+footer{
+    position: absolute;
+    
+    left: 30px;
+    right: 30px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    border-top: 1px solid gainsboro;
+    padding-top: 10px; 
+}
+.footerID:hover{
+    text-decoration: underline;
+    color: gray;
+}
+.footerID{
+    color: black;
+    margin-left: 30px;
+}
